@@ -66,3 +66,35 @@ img {
 #slide4:checked ~ .slider__container .slider__wrap {
   transform: translateX(-75%);
 }
+
+/* обертка для текста и кружочков */
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* подписи к мемам */
+.text {
+  display: none; 
+  font-size: 1.5rem;
+  color: white;
+}
+
+#slide1:checked ~ .wrap .text-box .text--one,
+#slide2:checked ~ .wrap .text-box .text--two,
+#slide3:checked ~ .wrap .text-box .text--three,
+#slide4:checked ~ .wrap .text-box .text--four {
+  display: block;  
+  animation: opacity 2s ease;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }  
+
+  100% {
+    opacity: 1;
+  }
+}
