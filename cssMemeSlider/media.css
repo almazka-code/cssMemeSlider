@@ -1,0 +1,27 @@
+@media (max-width: 1024px) {
+  .slider {  
+    width: 60vw;   
+    height: 60vh; 
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {  
+    width: 70vw;   
+    height: 70vh; 
+  }
+
+  .wrap {
+    flex-direction: column-reverse;
+    gap: 1.5rem; 
+  }
+
+  .text-box {
+    align-self: start;
+  }
+}
+

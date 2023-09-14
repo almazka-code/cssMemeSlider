@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Meme Slider</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+  <div class="slider">
+    <input class="input" id="slide1" type="radio" name="input" checked>
+    <input class="input" id="slide2" type="radio" name="input">
+    <input class="input" id="slide3" type="radio" name="input">
+    <input class="input" id="slide4" type="radio" name="input">
+
+    <div class="slider__container">
+      <div class="slider__wrap">
+        <div class="slide">
+          <img src="img/1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img/2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img/3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img/4.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="text-box">
+        <p class="text text--one">Скопировал код, как в уроке</p>
+        <p class="text text--two">Не мой тип</p>
+        <p class="text text--three">HTML & CSS</p>
+        <p class="text text--four">Пытаюсь найти ошибки в коде</p>
+
+      </div>
+
+      <div class="control">
+        <label for="slide1" class="control__label control__label--one">
+          <span class="control__circle"></span>
+        </label>
+        <label for="slide2" class="control__label control__label--two">
+          <span class="control__circle"></span>
+        </label>
+        <label for="slide3" class="control__label control__label--three">
+          <span class="control__circle"></span>
+        </label>
+        <label for="slide4" class="control__label control__label--four">
+          <span class="control__circle"></span>
+        </label>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
